@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TuSneakers-Quienes Somos</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="bootstrap-5.2.3-dist/css/bootstrap-reboot.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <div class="header">
+      <i id="btn-menu" class="fa-solid fa-bars"></i>
+      <div class="contanier">
+        <img src="image/logo977.png" alt="" />
+        <div id="menu" class="nav-links">
+          <a class="active" href="index.html">Inicio</a>
+          <a href="productos.html">Productos</a>
+          <a href="contacto.html">Contacto</a>
+          <a href="quienessomos.html">Quienes Somos</a>
+          <a href="faq.html">Preguntas Frecuentes</a>
+          <div class="soc-links">
+            <a href="#"><i class="fa-solid fa-heart"></i></a>
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="#"><i class="fa-solid fa-user"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let btnMenu = document.getElementById("btn-menu");
+      let menu = document.getElementById("menu");
+
+      btnMenu.onclick = () => {
+        btnMenu.classList.toggle("fa-times");
+        menu.classList.toggle("active");
+      };
+    </script>
+    <!--Quienes Somos-->
+
+    <div class="about" id="About">
+      <h1>Quienes Somos</h1>
+
+      <div class="about_main">
+        <div class="about_image">
+          <div class="about_small_image">
+            <img src="image/pesas.avif" onclick="functio(this)" />
+            <img src="image/hombrecorriendo.jpg" onclick="functio(this)" />
+            <img src="image/running.jpg" onclick="functio(this)" />
+            <img src="image/gym.avif" onclick="functio(this)" />
+          </div>
+
+          <div class="image_contaner">
+            <img src="image/pesas.avif" id="imagebox" />
+          </div>
+        </div>
+
+        <div class="about_text">
+          <p>
+            Somos una compañía de retail deportivo con más de 40 años de
+            historia en el mercado Argentino, comercializando una amplia
+            variedad de productos de marcas de primera línea. TuSneakers nace
+            como con la idea de generar un espacio de moda inspirada en el
+            deporte para nuestros exigentes clientes, brindándoles una variada
+            oferta de calzados de las mejores marcas de deportes y de moda, todo
+            en un mismo lugar, de manera de poder combinarlas y armar un look
+            urbano, canchero y confortable para transitar todo el día.
+            TuSneakers es una marca viva, que se adapta al ritmo de la ciudad,
+            por eso cambiamos constantenmente de colores y texturas en nuestro
+            logo, porque somos dinámicos, diversos, transgresores y nos gusta
+            estar en sintonía con la tendencia del momento, igual que nuestros
+            clientes! Comprendemos que cada persona tiene un círculo propio y
+            único, donde interactúa, se relaciona, se complementa con los demás,
+            con su entorno. Este elemento tan importante nos interesa, tu
+            círculo nos interesa, queremos ser parte de tu círculo.
+          </p>
+        </div>
+      </div>
+
+      <script>
+        function functio(small) {
+          var full = document.getElementById("imagebox");
+          full.src = small.src;
+        }
+      </script>
+    </div>
+  </body>
+ 
+  <div class="services" id="Servises">
+    <h1>Nuestros Servicios</h1>
+
+    <div class="services_cards">
+      <div class="services_box">
+        <i class="fa-solid fa-truck-fast"></i>
+        <h3>Envio Express</h3>
+        <p>
+          Con nuestro envio Expres tu pedido llegara en los siguientes 3 dias
+          habiles luego de realizar la compra.
+        </p>
+      </div>
+
+      <div class="services_box">
+        <i class="fa-solid fa-rotate-left"></i>
+        <h3>30 dias para devoluciones</h3>
+        <p>
+          En caso de que no llegue tu prodcuto del talle que necesites u otras
+          razones, puedes pedir una devolucion.
+        </p>
+      </div>
+
+      <div class="services_box">
+        <i class="fa-solid fa-headset"></i>
+        <h3>Soporte 24x7</h3>
+        <p>Siempre podras contar con nuestro equipo de soporte.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div id="footer_content">
+        <div id="footer_contacts">
+            <h1>TuSneakers</h1>
+            <p>Todo lo que siempre soñaste en una sola tienda.</p>
+
+            <div id="footer_social_media">
+                <a href="#" class="footer-link" id="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" class="footer-link" id="facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#" class="footer-link" id="whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                
+            </div>
+        </div>
+
+        <ul class="footer-list">
+            <li>
+                <h3>Consigue ayuda</h3>
+            </li>
+            <li>
+              <a href="faq.html" class="footer-link">FAQ</a>
+          </li>
+          <li>
+              <a href="productos.html" class="footer-link">Tienda</a>
+          </li>
+          <li>
+              <a href="contacto.html" class="footer-link">Devoluciones</a>
+          </li>
+          <li>
+            <a href="faq.html" class="footer-link">Opciones de pago</a>
+        </li>
+        </ul>
+
+        <ul class="footer-list">
+            <li>
+                <h3>Contacto</h3>
+            </li>
+            <li>
+                <a href="#" class="footer-link">123/La Plata/Buenos Aires</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">+54 12 345 6789</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">contacto@gmail.com</a>
+            </li>
+        </ul>
+
+        <div id="footer_subscribe">
+            <h3>Suscribete</h3>
+
+            <p>
+                Ingresa tu Email para estar notificado sobre novedades
+            </p>
+
+            <div id="input_group">
+                <input type="email" placeholder="Ingresa tu Email aqui..." id="email">
+                <button>
+                    <i class="fa-regular fa-envelope"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer_copyright">
+        &#169
+        2023 all rights reserved
+    </div>
+</footer>
+
+</html>
