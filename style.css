@@ -275,8 +275,6 @@ textarea::-webkit-scrollbar-thumb {
   border: 1px solid rgb(255, 255, 255);
 }
 
-/* Productos */
-
 .titp {
   display: flex;
   justify-content: center;
@@ -430,6 +428,7 @@ textarea::-webkit-scrollbar-thumb {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-top: 300px;
 }
 
 .about .about_main .about_image {
@@ -538,7 +537,7 @@ textarea::-webkit-scrollbar-thumb {
   width: 70%;
   margin: 0 auto;
   text-align: center;
-  padding: 300px 0 10px 0;
+  padding: 100px 0 10px 0;
 }
 
 .services h1 {
