@@ -24,8 +24,8 @@ body {
 }
 .header {
   width: 100%;
-  background-image: linear-gradient(to right, #434343 0%, black 100%);
-  border-bottom: 1px solid rgba(17, 17, 17, 0.1176470588);
+  background-image: linear-gradient(to right, rgba(67, 67, 67, 0.1647058824) 0%, rgba(0, 0, 0, 0.158) 100%);
+  border-bottom: 1px solid rgba(17, 17, 17, 0.0352941176);
   position: relative;
 }
 
@@ -57,9 +57,8 @@ body {
   transition: 0.3s;
 }
 
-.header .contanier .nav-links a:hover,
-.header .contanier .nav-links a.active {
-  color: #7c7c7c;
+.header .contanier .nav-links a:hover {
+  color: #00eeff;
 }
 
 .header .contanier .nav-links .soc-links {
@@ -173,6 +172,14 @@ body {
   align-items: center;
   margin-top: 60px;
   margin-bottom: 50px;
+  color: white;
+}
+
+.Marca {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
   color: white;
 }
 
@@ -483,7 +490,7 @@ section.left .socialMedia {
   background-color: rgba(0, 0, 0, 0.0470588235);
   color: rgba(255, 255, 255, 0.6862745098);
   border: none;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.4745098039);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3568627451);
   outline: none;
 }
 

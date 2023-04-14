@@ -25,8 +25,12 @@ body {
 // NAVBAR
 .header {
   width: 100%;
-  background-image: linear-gradient(to right, #434343 0%, black 100%);
-  border-bottom: 1px solid #1111111e;
+  background-image: linear-gradient(
+    to right,
+    #4343432a 0%,
+    rgba(0, 0, 0, 0.158) 100%
+  );
+  border-bottom: 1px solid #11111109;
   position: relative;
 }
 .header .contanier {
@@ -55,9 +59,8 @@ body {
   text-transform: uppercase;
   transition: 0.3s;
 }
-.header .contanier .nav-links a:hover,
-.header .contanier .nav-links a.active {
-  color: #7c7c7c;
+.header .contanier .nav-links a:hover {
+  color: #00eeff;
 }
 .header .contanier .nav-links .soc-links {
   margin-left: 40px;
@@ -176,6 +179,14 @@ body {
   align-items: center;
   margin-top: 60px;
   margin-bottom: 50px;
+  color: white;
+}
+
+.Marca {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
   color: white;
 }
 
@@ -476,7 +487,7 @@ section.left .socialMedia {
   background-color: #0000000c;
   color: #ffffffaf;
   border: none;
-  border-bottom: 2px solid #00000079;
+  border-bottom: 2px solid #ffffff5b;
   outline: none;
 }
 .messageForm textarea {
