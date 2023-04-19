@@ -3,26 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- SEO -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Contactanos a nuestro equipo de soporte activo 24/7 para solucionar tus dudas"/>
     <meta name="keywords" content="contacto, contactanos, devoluciones, soporte, ayuda"/>
+
+    <!-- BOOSTRAP -->
+    <link
+    rel="stylesheet"
+    href="bootstrap-5.2.3-dist/css/bootstrap-reboot.min.css"
+  />
+  
+    <!-- STYLES -->
     <title>TuSneakers-Contacto</title>
     <link rel="stylesheet" href="scss/styles.css" />
+    <link rel="icon" href="image/logo977.png">
+
+    <!-- FONT -->
     <link
-      rel="stylesheet"
-      href="bootstrap-5.2.3-dist/css/bootstrap-reboot.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,800;1,900&display=swap" rel="stylesheet">
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+    
   </head>
 
   <body>
+
+    <!-- NAVBAR -->
     <div class="header">
       <i id="btn-menu" class="fa-solid fa-bars"></i>
       <div class="contanier">
@@ -52,6 +63,7 @@
       };
     </script>
   
+  <!-- CONTACTO -->
     <div class="containerc">
       <main class="row">
         
@@ -100,7 +112,7 @@
   
           </div>
   
-  
+  <!-- REDES -->
           <div class="socialMedia">
             <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
             <a href="#"><i class="fa-brands fa-twitter"></i></a>
@@ -112,11 +124,9 @@
   
         </section>
   
-       
+       <!-- DATOS -->
         <section class="col right">
-          
         
-  
           <form class="messageForm">
             
             <div class="inputGroup halfWidth">
@@ -152,38 +162,37 @@
     </div>
   </body>
 
+<!-- SERVICIOS -->
+<div class="services">
+  <h1>Nuestros Servicios</h1>
 
-  <div class="services" id="Servises">
-    <h1>Nuestros Servicios</h1>
+  <div class="services_cards">
+    <div class="services_box">
+      <i class="fa-solid fa-truck-fast"></i>
+      <h3>Envío Express</h3>
+      <p>
+        Tu pedido llegará en los proximos 3 días
+        hábiles.
+      </p>
+    </div>
 
-    <div class="services_cards">
-      <div class="services_box">
-        <i class="fa-solid fa-truck-fast"></i>
-        <h3>Envío Express</h3>
-        <p>
-          Con nuestro envío Expres tu pedido llegara en los proximos 3 días
-          hábiles luego de realizar la compra.
-        </p>
-      </div>
+    <div class="services_box">
+      <i class="fa-solid fa-rotate-left"></i>
+      <h3>30 días para devoluciones</h3>
+      <p>
+        Puedes pedir una devolución ante cualquier problema.
+      </p>
+    </div>
 
-      <div class="services_box">
-        <i class="fa-solid fa-rotate-left"></i>
-        <h3>30 días para devoluciones</h3>
-        <p>
-          En caso de que no llegue tu prodcuto del talle que necesites u otras
-          razones, puedes pedir una devolución.
-        </p>
-      </div>
-
-      <div class="services_box">
-        <i class="fa-solid fa-headset"></i>
-        <h3>Soporte 24x7</h3>
-        <p>Siempre podras contar con nuestro equipo de soporte.</p>
-      </div>
+    <div class="services_box">
+      <i class="fa-solid fa-headset"></i>
+      <h3>Soporte 24x7</h3>
+      <p>Siempre podras contar con nuestro equipo de soporte.</p>
     </div>
   </div>
+</div>
 
-
+<!-- FOOTER -->
   <footer>
     <div id="footer_content">
         <div id="footer_contacts">
@@ -239,12 +248,13 @@
             </li>
         </ul>
 
+        <!-- Newsletter -->
         <div id="footer_subscribe">
-            <h3>Suscribete</h3>
-
-            <p>
-                Ingresa tu Email para estar notificado sobre novedades
-            </p>
+          <h3>Newsletter</h3>
+  
+          <p>
+              Ingresa tu Email para estar notificado sobre novedades!
+          </p>
 
             <div id="input_group">
                 <input type="email" placeholder="Ingresa tu Email aqui..." id="email">

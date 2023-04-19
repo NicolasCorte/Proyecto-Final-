@@ -1,3 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+.faq, .Marca, .titp {
+  color: white;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 4px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,29 +14,14 @@
 }
 
 body {
-  background: linear-gradient(45deg, #d2001a, #7462ff, #f48e21, #23d5ab);
-  background-size: 400% 400%;
-  animation: color 12s ease-in-out infinite;
+  background-color: #222;
 }
 
-@keyframes color {
-  0% {
-    background-position: 0 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0 50%;
-  }
-}
 .header {
   width: 100%;
-  background-image: linear-gradient(to right, rgba(67, 67, 67, 0.1647058824) 0%, rgba(0, 0, 0, 0.158) 100%);
-  border-bottom: 1px solid rgba(17, 17, 17, 0.0352941176);
   position: relative;
+  z-index: 1000;
 }
-
 .header .contanier {
   width: 85%;
   margin: auto;
@@ -37,18 +30,15 @@ body {
   height: 80px;
   align-items: center;
 }
-
 .header .contanier img {
   display: flex;
   height: 75px;
   width: 100px;
 }
-
 .header .contanier .nav-links {
   display: flex;
   align-items: center;
 }
-
 .header .contanier .nav-links a {
   color: #fff;
   text-decoration: none;
@@ -56,15 +46,12 @@ body {
   text-transform: uppercase;
   transition: 0.3s;
 }
-
 .header .contanier .nav-links a:hover {
-  color: #00eeff;
+  color: #9c27b0;
 }
-
 .header .contanier .nav-links .soc-links {
   margin-left: 40px;
 }
-
 .header .contanier .nav-links .soc-links a {
   font-size: 22px;
   margin-left: 15px;
@@ -93,15 +80,18 @@ body {
 }
 
 .inicio-text h1 {
+  font-family: "Chivo Mono", monospace;
+  font-weight: 700;
   font-size: 90px;
   line-height: 1;
   color: #ffffff;
-  margin: 0 0 45px;
+  margin: 0 0 40px;
 }
 .inicio-text h4 {
+  font-family: "Chivo Mono", monospace;
   font-size: 28px;
   font-weight: 600;
-  color: #ffffff;
+  color: #9c27b0;
   margin-bottom: 10px;
 }
 .inicio-text p {
@@ -113,15 +103,15 @@ body {
 .inicio-text a {
   display: inline-block;
   color: #ffffff;
-  background: rgba(68, 68, 68, 0.1176470588);
+  background: #9c27b0;
   border: 1px solid transparent;
   padding: 12px 30px;
-  line-height: 1.4;
   font-size: 14px;
   font-weight: 500;
   border-radius: 30px;
   text-transform: uppercase;
   transition: all 0.55s ease;
+  text-decoration: none;
 }
 
 .inicio-img img {
@@ -130,10 +120,9 @@ body {
 }
 
 .inicio-text a:hover {
-  background: transparent;
-  border: 1px solid #ffffff;
+  background: rgba(155, 39, 176, 0.5411764706);
+  border: 1px solid rgba(255, 255, 255, 0.137254902);
   transform: translateX(8px);
-  color: rgb(255, 255, 255);
 }
 
 .iconsind {
@@ -167,6 +156,7 @@ body {
 }
 
 .titp {
+  font-size: 65px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -176,31 +166,32 @@ body {
 }
 
 .Marca {
+  font-size: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 60px;
+  margin-top: 35px;
+  margin-bottom: 5px;
   color: white;
 }
 
 .allcard {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  justify-content: center;
-  gap: 10px;
+  gap: 20px;
   width: 90%;
   height: auto;
   margin: 20px auto;
 }
 
 .product-card {
-  background: rgba(255, 255, 255, 0.1019607843);
+  background: rgba(255, 255, 255, 0.0470588235);
   border: 2px solid rgba(0, 0, 0, 0.1215686275);
   position: relative;
   width: 380px;
   height: -moz-min-content;
   height: min-content;
-  padding: 25px;
+  padding: 20px;
   border-radius: 20px;
   transition: 0.4s;
   margin: 10px;
@@ -224,7 +215,7 @@ body {
   font-size: 13px;
 }
 .product-card .card-img {
-  width: 250px;
+  width: 280px;
   height: 250px;
   position: relative;
   border-radius: 12px;
@@ -239,16 +230,6 @@ body {
   height: 100%;
   transition: 0.4s;
 }
-.product-card .card-img i {
-  cursor: pointer;
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  color: #ffffff;
-  background: #ffffff;
-  padding: 6px;
-  border-radius: 6px;
-}
 
 .card-img-wrapper {
   display: flex;
@@ -257,13 +238,13 @@ body {
 }
 
 .product-card:hover {
-  border-color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.1450980392);
   transform: translateY(-10px);
   box-shadow: 0 5px 12px rgba(0, 0, 0, 0.08);
 }
 
 .product-card:hover .card-img img {
-  transform: scale(1.06);
+  transform: scale(1.2);
 }
 
 .card-body {
@@ -292,20 +273,24 @@ body {
 .card-sizes span {
   cursor: pointer;
   color: #ffffff;
-  background: rgba(255, 255, 255, 0.3137254902);
+  background: rgba(255, 255, 255, 0.0549019608);
   border-radius: 3px;
   padding: 6px 12px;
 }
-
 .card-footer button {
   width: 100%;
   height: 46px;
   cursor: pointer;
   border-radius: 12px;
-  background-color: rgba(0, 0, 0, 0.0470588235);
+  background-color: #9c27b0;
   color: #ffffff;
   font-size: 20px;
   letter-spacing: 0.5px;
+  border-color: #9c27b0;
+}
+.card-footer button:hover {
+  background-color: rgba(155, 39, 176, 0.5960784314);
+  border-color: rgba(255, 255, 255, 0.233);
 }
 
 .c-item {
@@ -363,7 +348,7 @@ section.left .contactTitle h2::before {
   position: absolute;
   width: 50%;
   height: 1px;
-  background-color: #444;
+  background-color: #ae9cb1;
   top: 120%;
   left: 0;
 }
@@ -373,7 +358,7 @@ section.left .contactTitle h2::after {
   position: absolute;
   width: 25%;
   height: 3px;
-  background-color: rgb(0, 0, 0);
+  background-color: #9c27b0;
   top: calc(120% - 1px);
   left: 0;
 }
@@ -403,6 +388,7 @@ section.left .contactInfo {
   border-radius: 50%;
   margin-right: 20px;
   position: relative;
+  background-color: #9c27b0;
 }
 
 .iconGroup .icon i {
@@ -454,7 +440,7 @@ section.left .socialMedia {
 
 .socialMedia a:hover {
   transform: translateY(-5px);
-  background-color: rgba(0, 0, 0, 0.2549019608);
+  background-color: #9c27b0;
   border: 1px solid rgb(255, 255, 255);
 }
 
@@ -490,7 +476,7 @@ section.left .socialMedia {
   background-color: rgba(0, 0, 0, 0.0470588235);
   color: rgba(255, 255, 255, 0.6862745098);
   border: none;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.3568627451);
+  border-bottom: 2px solid rgba(156, 39, 176, 0.3568627451);
   outline: none;
 }
 
@@ -540,6 +526,7 @@ section.left .socialMedia {
   color: rgb(255, 255, 255);
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
   border: 1px solid rgb(255, 255, 255);
+  transform: translateX(8px);
 }
 
 .about-us {
@@ -561,7 +548,7 @@ section.left .socialMedia {
   padding: 6% 0;
 }
 .text h4 {
-  color: rgba(255, 255, 255, 0.7137254902);
+  color: #9c27b0;
   font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
@@ -588,7 +575,7 @@ hr {
   width: 30%;
   border: none;
   height: 2px;
-  background-color: #ffffff;
+  background-color: #9c27b0;
   margin-bottom: 50px;
 }
 
@@ -596,7 +583,7 @@ hr {
   display: flex;
 }
 .last-text h3 {
-  color: #ffffff;
+  color: #9c27b0;
   font-size: 60px;
   font-weight: 700;
 }
@@ -617,7 +604,8 @@ hr {
   align-items: center;
   margin-top: 60px;
   margin-bottom: 50px;
-  color: white;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
 }
 
 .titfaq {
@@ -653,45 +641,60 @@ summary {
 }
 
 .services {
-  width: 70%;
-  margin: 0 auto;
-  text-align: center;
-  padding: 100px 0 10px 0;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background: #1f1d1d;
 }
 .services h1 {
   font-size: 60px;
   text-transform: uppercase;
   color: #ffffff;
+  text-align: center;
 }
 .services .services_cards {
-  width: 80%;
-  margin: 0 auto;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
-  top: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.services .services_box {
+  height: 11rem;
+  width: 17rem;
+  background: #101010;
+  text-align: center;
+  border-radius: 1rem;
+  box-shadow: 0 0.3rem 5rem rgba(0, 0, 0, 0.5);
+  margin: 2rem;
 }
 .services .services_box i {
-  font-size: 60px;
-  margin: 20px 0;
-  cursor: pointer;
-  color: rgba(255, 255, 255, 0.2470588235);
+  height: 3rem;
+  width: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  border-radius: 50%;
+  color: white;
+  background-color: #9c27b0;
+  font-size: 2rem;
+  margin: 1rem 0;
 }
 .services .services_box h3 {
-  margin-bottom: 12px;
-  font-size: 19px;
-  color: #ffffff;
+  font-size: 20px;
+  color: #9c27b0;
 }
 .services .services_box p {
-  text-align: center;
   color: #ffffff;
-  margin-bottom: 80px;
+  margin-top: 10px;
+  padding: 0 15px;
+  font-size: 16px;
 }
 
 footer {
   width: 100%;
-  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  background-color: #222;
 }
 
 .footer-link {
@@ -760,7 +763,7 @@ footer {
 }
 
 .footer-list .footer-link:hover {
-  color: #00b7ff;
+  color: #9c27b0;
 }
 
 #footer_subscribe {
@@ -783,7 +786,7 @@ footer {
 }
 
 #input_group button {
-  background-color: #353535;
+  background-color: #2c2c2c;
   border: none;
   padding: 0px 1.25rem;
   font-size: 1.125rem;
@@ -847,25 +850,6 @@ footer {
     margin-bottom: 25px;
   }
 }
-@media (max-width: 1280px) {
-  body {
-    height: unset;
-    /* padding: 30px 0; */
-  }
-  .containerp {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .containerp .card {
-    margin: 20px;
-  }
-}
-@media (max-width: 1240px) {
-  .text h1 {
-    font-size: 30px;
-    transition: 0.3s;
-  }
-}
 @media (max-width: 1195px) {
   .inicio-main {
     height: 100%;
@@ -900,6 +884,11 @@ footer {
     align-items: center;
   }
 }
+@media (max-width: 1067px) {
+  .services {
+    height: 70vh;
+  }
+}
 @media (max-width: 1040px) {
   .about-us {
     grid-template-columns: 1fr;
@@ -932,10 +921,18 @@ footer {
     margin: 0px;
   }
 }
+@media screen and (max-width: 799px) {
+  .product-card {
+    margin-left: 170px;
+  }
+}
 @media screen and (max-width: 768px) {
   #footer_content {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
+  }
+  .product-card {
+    margin-left: 150px;
   }
 }
 @media (max-width: 750px) {
@@ -954,11 +951,11 @@ footer {
     line-height: 33px;
   }
   .header .contanier .nav-links {
+    background-color: #222;
     position: absolute;
     top: 100%;
     left: 0;
     right: 0;
-    background-image: linear-gradient(to right, #434343 0%, black 100%);
     flex-wrap: wrap;
     padding: 10px;
     border-top: 1px solid rgba(212, 212, 212, 0.6549019608);
@@ -991,9 +988,12 @@ footer {
     border-bottom: none;
   }
 }
-@media screen and (max-width: 711px) {
-  .products {
-    margin-left: 160px;
+@media screen and (max-width: 731px) {
+  .services {
+    height: 120vh;
+  }
+  .product-card {
+    margin-left: 135px;
   }
 }
 @media screen and (max-width: 680px) {
@@ -1001,15 +1001,65 @@ footer {
     width: 100%;
     height: auto;
   }
+  .product-card {
+    margin-left: 110px;
+  }
 }
-@media screen and (max-width: 550px) {
-  .services {
-    width: 100%;
+@media screen and (max-width: 600px) {
+  .product-card {
+    margin-left: 80px;
+  }
+}
+@media screen and (max-width: 517px) {
+  .inicio-img img {
+    width: 350px;
+  }
+  .inicio-text h1 {
+    font-size: 52px;
+  }
+  .inicio-text h5 {
+    font-size: 30px;
+  }
+  .inicio-text p {
+    flex-wrap: wrap;
+  }
+  .product-card {
+    margin-left: 40px;
+  }
+}
+@media screen and (max-width: 512px) {
+  .titp {
+    font-size: 45px;
+  }
+  .Marca {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 475px) {
+  .product-card {
+    margin-left: 10px;
+  }
+  .faq {
+    text-transform: none;
   }
 }
 @media screen and (max-width: 426px) {
   #footer_content {
     grid-template-columns: repeat(1, 1fr);
     padding: 3rem 2rem;
+  }
+  .product-card {
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .text h3 {
+    font-size: 50px;
+  }
+  .text p {
+    flex-wrap: wrap;
+  }
+  .about-us .main-img img {
+    width: 340px;
   }
 }/*# sourceMappingURL=styles.css.map */
