@@ -84,14 +84,14 @@ body {
   font-weight: 700;
   font-size: 90px;
   line-height: 1;
-  color: #ffffff;
+  color: #9c27b0;
   margin: 0 0 40px;
 }
 .inicio-text h4 {
   font-family: "Chivo Mono", monospace;
   font-size: 28px;
   font-weight: 600;
-  color: #9c27b0;
+  color: #ffffff;
   margin-bottom: 10px;
 }
 .inicio-text p {
@@ -277,6 +277,7 @@ body {
   border-radius: 3px;
   padding: 6px 12px;
 }
+
 .card-footer button {
   width: 100%;
   height: 46px;
