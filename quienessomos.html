@@ -33,34 +33,20 @@
   <body>
 
     <!-- NAVBAR -->
-    <div class="header">
-      <i id="btn-menu" class="fa-solid fa-bars"></i>
-      <div class="contanier">
-        <img src="image/logo977.png" alt="" />
-        <div id="menu" class="nav-links">
-          <a class="active" href="index.html">Inicio</a>
-          <a href="productos.html">Productos</a>
-          <a href="contacto.html">Contacto</a>
-          <a href="quienessomos.html">Quienes Somos</a>
-          <a href="faq.html">Preguntas Frecuentes</a>
-          <div class="soc-links">
-            <a href="#"><i class="fa-solid fa-heart"></i></a>
-            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-            <a href="#"><i class="fa-solid fa-user"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <script>
-      let btnMenu = document.getElementById("btn-menu");
-      let menu = document.getElementById("menu");
-
-      btnMenu.onclick = () => {
-        btnMenu.classList.toggle("fa-times");
-        menu.classList.toggle("active");
-      };
-    </script>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+      <div class="logo"><img src="image/logo977.png" alt="Logo de TuSneakers"></div>
+      <ul class="list">
+        <li><a href="index.html">Inicio</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="quienessomos.html">Nosotros</a></li>
+          <li><a href="faq.html">Preguntas Frecuentes</a></li>
+      </ul>
+    </nav>
 
     <!--QUIENES SOMOS-->
     <section class="about-us">
